@@ -7,7 +7,16 @@
  * ex: howManyTargets([1, 2, 3, 2, 1, 1], 1) //=> 3
  *
  */
+//function howManyTargets() {}
 
-function howManyTargets() {}
+const howManyTargets = (arr, target) => {
+    let amount = 0;
+    arr.forEach((el) => {
+			if (el === target) {
+				amount += 1;
+			}
+		});
+		return amount;
+ }
 
 module.exports = howManyTargets;

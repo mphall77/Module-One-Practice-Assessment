@@ -6,7 +6,21 @@
  * ex: productOfOddNumbers([1, 2, 3, 4, 5])
  * returns 15
  */
+ //function productOfOddNumbers() {}
 
- function productOfOddNumbers() {}
+const productOfOddNumbers = (nums) => {
+	let sum = 1;
+	nums.forEach((number) => {
+		if (number % 2 === 1) {
+			sum *= number;
+		}
+	});
+	if (sum === 1) {
+		return 0;
+	} else {
+		return sum;
+	}
+};
+
 
  module.exports = productOfOddNumbers

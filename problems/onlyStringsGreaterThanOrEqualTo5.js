@@ -6,7 +6,10 @@
  * ex: onlyStringsGreaterThanOrEqualTo5(["cat", "hello", "corey", "dog"])
  * returns ["hello", "corey"]
  */
+//function onlyStringsGreaterThanOrEqualTo5() { }
 
-function onlyStringsGreaterThanOrEqualTo5() {}
+const onlyStringsGreaterThanOrEqualTo5 = (words) => words.filter((word) => word.length >= 5)  
+    
+//const allFiveOrMore = wordArr => wordArr.every((word) => word.length >= 5)
 
 module.exports = onlyStringsGreaterThanOrEqualTo5;

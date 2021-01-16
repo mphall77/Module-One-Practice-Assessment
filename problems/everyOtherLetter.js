@@ -7,6 +7,13 @@
  *
  */
 
-function everyOtherLetter() {}
+//function everyOtherLetter() {}
+const everyOtherLetter = (str) => {
+    let output = "";
+    for (let i = 0; i < str.length; i += 2) {
+        output += str[i];
+    }
+    return output;
+}
 
 module.exports = everyOtherLetter;

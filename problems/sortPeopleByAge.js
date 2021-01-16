@@ -17,6 +17,22 @@
 ]
  */
 
-function sortPeopleByAge() {}
+//function sortPeopleByAge() { }
+const sortPeopleByAge = (people) => {
+	people.sort((person1, person2) => {
+		return person1.age - person2.age;
+	});
+  return people;
+};
+
+/* const sortPeopleByAge = (people) => {
+	return people
+		.sort((person1, person2) => {
+			return person1.age - person2.age;
+		})
+		.map((person) => {
+			return people;
+		});
+}; */
 
 module.exports = sortPeopleByAge;
